@@ -2,11 +2,12 @@ import requests, json, xlwt, openpyxl, pandas as pd
 from Import_files.writeExcel import GenerateExcelFile
 
 TOKEN_URL = 'https://api.helloasso.com/oauth2/token'
+
 client_id = 'put client-id here'
 client_secret = 'put client-secret here'
 grant_type = 'client_credentials'
 
-COURSE_SLUG = "salsa-debutant-2023-2024"
+COURSE_SLUG = "cours-anglais-1er-semestre-2022-23"
 COURSE_SLUG_API_URL = "https://api.helloasso.com/v5/organizations/lyon4water/forms/Event/{0}/items".format(COURSE_SLUG)
 
 MEMBERSHIP_SLUG = "adhesion-annee-2023-2024"
